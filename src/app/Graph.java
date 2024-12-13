@@ -52,7 +52,7 @@ public class Graph {
         return adjacencyList.containsKey(source) && adjacencyList.get(source).contains(destination);
     }
 
-    private void printGraph() {
+    public void printGraph() {
         for (Map.Entry<Integer, List<Integer>> entry : adjacencyList.entrySet()) {
             System.out.println("Vertex " + entry.getKey() + ": " + entry.getValue());
         }
